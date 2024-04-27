@@ -1,0 +1,228 @@
+/* Add your CSS styles here */
+/* Add this CSS to your existing stylesheet */
+
+
+
+
+
+.progress-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5%; /* Adjust margin for smaller screens */
+    margin-right: 5%; /* Adjust margin for smaller screens */
+  }
+  
+  
+  
+  .progress-line-between {
+    height: 0.2vw; /* Adjust line thickness relative to viewport width */
+    width: 30%; /* Adjust the length of the line relative to the container width */
+    background-color: #564130;
+    margin: 0 1vw; /* Adjust the margin between dots relative to viewport width */
+  }
+  
+  .progress-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 5%; /* Adjust margin for smaller screens */
+    margin-right: 5%; /* Adjust margin for smaller screens */
+  }
+  
+  /* Adjustments for larger screens */
+  @media only screen and (min-width: 768px) {
+    .progress-line {
+      margin-left: 6%; /* Adjust margin for larger screens */
+      margin-right: 6%; /* Adjust margin for larger screens */
+      
+    }
+    .progress-text{
+      margin-left: 6%;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 30px;
+    }
+    .left-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 500px;
+    }
+    .left-card1{
+     height: auto;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+    .left-card1-text {
+      position: absolute;
+      top: 50px;
+      right: 20px;
+      margin-left: 20px;
+      color: #564130;
+      font-size: 1em; /* Set font size relative to the parent element */
+    }
+    
+    /* Adjust font sizes and margins for smaller screens */
+    @media only screen and (max-width: 768px) {
+      .left-card1-text {
+        font-size: 0.5em; /* Adjust font size for smaller screens */
+        margin-left: 100px; /* Adjust margin for smaller screens */
+      }
+    }
+    
+    
+    .left-card2{
+      height: auto;
+       border: 1px solid #ccc;
+       border-radius: 8px;
+       padding: 20px;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     }
+     .left-card3{
+      height: 15vh;
+       border: 1px solid #ccc;
+       border-radius: 8px;
+       margin-bottom: 20px;
+  
+       padding: 20px;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     }
+     
+    .right-card {
+      width: 430px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      left: 100px;
+      height: 365px;
+      margin-top: -1px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      
+    }
+  
+    @media only screen and (min-width: 768px) {
+      /* Apply specific styles for screens wider than 768px */
+      .right-card {
+        width: 430px; /* Adjust width for larger screens */
+        margin-top: -1px; /* Adjust margin-top for larger screens */
+      }
+    }
+    
+    .otp-sent {
+      
+      font-size: 22px;
+    }
+  
+    .enter-otp {
+      margin-top: 1.5rem;
+      margin-left: 75px;
+      color: #564130;
+      
+      font-size: larger;
+    }
+  
+    .small-card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+      margin-top: 20px; /* Adjust spacing between small cards */
+  
+     
+    }
+    
+    /* Style for the first small card */
+    .small-card:first-child {
+      margin-top: 0; /* Remove margin-top for the first small card */
+    }
+
+    /* Style for the first small card */
+    .small-card:first-child {
+        margin-top: 0; /* Remove margin-top for the first small card */
+      }
+      .login-container input[type="text"]
+      {
+       
+       padding: 10px 10px 10px 40px; /* Adjusted padding to accommodate icon */
+       margin-bottom: 20px;
+       border: 1px solid #ccc;
+       border-radius: 4px;
+       box-sizing: border-box;
+      }
+     .login-container input[type="password"]{
+     
+       padding: 10px 10px 10px 40px; /* Adjusted padding to accommodate icon */
+       margin-bottom: 20px;
+       border: 1px solid #ccc;
+       border-radius: 4px;
+       box-sizing: border-box;
+       
+     }
+     
+     .login-container input[type="submit"] {
+       width: 100%;
+       background-color: #564130;
+       color: white;
+       padding: 15px;
+       border: none;
+       border-radius: 10px;
+       cursor: pointer;
+       font-size: 16px;
+     }
+     
+     .login-container input[type="submit"]:hover {
+       background-color: #564130;
+     }
+   
+     .login-container input[type="checkbox"] {
+       vertical-align: middle; /* Align the checkbox vertically in the middle */
+       margin-right: 5px; /* Add some space between the checkbox and the text */
+       margin-bottom: 20px;
+   }
+   .input-row {
+      display: flex;
+      
+    }
+    
+    .input-row input[type="text"] {
+      flex: 1; /* This will make the input boxes take equal width */
+      margin-right: 10px; /* Adjust as needed to add space between input boxes */
+      width: 30px;
+    }
+    
+    /* Remove margin from the last input to prevent extra space */
+    .input-row input[type="text"]:last-child {
+      margin-right: 0;
+    }
+  
+    .input-roww {
+      display: flex;
+      
+    }
+    
+    .input-roww input[type="text"] {
+      flex: 1; /* This will make the input boxes take equal width */
+      margin-right: 10px; /* Adjust as needed to add space between input boxes */
+      width: 30px;
+    }
+    
+    /* Remove margin from the last input to prevent extra space */
+    .input-roww input[type="text"]:last-child {
+      margin-right: 0;
+    }
+    
+      

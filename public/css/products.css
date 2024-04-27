@@ -1,0 +1,209 @@
+body{
+    font-family: "Poppins-Medium", sans-serif;
+  }
+  .contains {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-top: -135vh; /* Adjust as needed */
+    width: 60%; /* Adjust as needed */
+    margin-left: 50%; /* Adjust as needed */
+    font-family: "Poppins-Medium", sans-serif;
+}
+
+.right-side h1 {
+    font-size: 2rem; /* Adjust as needed */
+    margin-top: 0;
+    color: #564130;
+}
+
+.right-side h5 {
+    font-size: 0.875rem; /* Adjust as needed */
+    margin-top: 5px;
+    font-style: italic;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: lightgray;
+    font-family: "Poppins", "sans-serif";
+    color: #564130;
+}
+
+.right-side h4 {
+    font-size: 1rem; /* Adjust as needed */
+    margin-top: 20px;
+}
+
+.right-side p {
+    font-size: 0.875rem; /* Adjust as needed */
+    line-height: 1.5;
+    margin-top: 5px;
+    text-align: justify;
+}
+
+.right-side h6 {
+    font-size: 0.875rem; /* Adjust as needed */
+    margin-top: 10px;
+}
+
+/* Styles for the quantity buttons */
+.quantity-buttons {
+    margin-top: 10px;
+}
+
+.quantity-buttons button {
+    font-size: 1rem; /* Adjust as needed */
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.quantity-buttons button:hover {
+    background-color: #ccc;
+}
+
+.checkout-button {
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #564130;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+/* Styles for the box */
+.box {
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    display: inline-block;
+}
+.thin-line {
+  border: none; /* Remove the default border */
+  border-top: 2px solid black; /* Set the top border to create the line */
+  width: 60%; /* Adjust the width as needed */
+  margin: 10px ; /* Center the line and provide some spacing */
+}
+.vertical-line {
+  position: relative; /* Positioning context for dots */
+}
+
+.line {
+  border-left: 1px solid black; /* Vertical line */
+  height: 180px; /* Height of the line */
+  margin-left: 5px; /* Adjust spacing between dots and line */
+}
+
+.dot {
+  width: 10px; /* Dot width */
+  height: 10px; /* Dot height */
+  background-color: black; /* Dot color */
+  border-radius: 50%; /* Make dots circular */
+  position: absolute; /* Position dots relative to vertical line */
+  top: 0; /* Align dots vertically */
+}
+
+.start-dot {
+  left: 0; /* Position the start dot */
+}
+
+.center-dot {
+  left: 0; /* Position the center dot */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+}
+
+.end-dot {
+  left: 0; /* Position the end dot */
+  top: 100%; /* Align the dot to the bottom */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .contains {
+        margin-top: 0;
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+.containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.cards {
+  width: calc(50% - 40px); /* Adjust width as needed */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+}
+.rating {
+  font-size: 20px;
+}
+.star {
+  color: #564130;
+}
+
+.containerss {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin-top: 70px;
+}
+
+.cardss-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  gap: 20px;
+  
+}
+
+.cardss {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  width: 400px;
+  
+}
+
+.cardss:last-child {
+  margin-right: 0;
+}
+
+.cardss img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.cardss h3 {
+  margin-top: 0px;
+}
+
+.cardss p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .cardss {
+    flex: 0 0 100%;
+    margin-right: 0;
+  }
+
+  .card-slider {
+    overflow-x: hidden;
+    flex-wrap: wrap;
+  
+  }
+}
